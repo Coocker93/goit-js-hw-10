@@ -28,6 +28,8 @@ function hideError() {
 function showCatInfo(cat) {
   const img = document.createElement('img');
   img.src = cat[0].url;
+  img.style.maxWidth = '500px'
+  img.style.maxHeight = '400px'
 
   const name = document.createElement('h2');
   name.textContent = cat[0].breeds[0].name;
